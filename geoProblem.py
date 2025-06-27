@@ -6,7 +6,7 @@ import math
 
 # --- Load and preprocess image ---
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-img = cv2.imread(r"C:\geoProblem.jpg")
+img = cv2.imread("geoProblem.jpg")
 if img is None:
     raise FileNotFoundError("Image not found")
 
@@ -96,7 +96,7 @@ def trapezoid_area(base1, base2, height):
 
 # Replace these with actual extracted dimensions as needed
 ab = 8.0
-bc = 6.0
+bc = 8.0
 dc = 2.0
 ad = bc  # assuming right trapezoid
 
